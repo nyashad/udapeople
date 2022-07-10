@@ -222,7 +222,11 @@ jobs:
           command: |
             cd backend
             npm install
+<<<<<<< HEAD
             npm run migrations --force > migrations_dump.txt
+=======
+            npm run --force migrations > migrations_dump.txt
+>>>>>>> 26bdeaa68de9d1aa9eae9f7d46827285868b9f08
       - run:
           name: Send migration status to kvdb.io
           command: |
